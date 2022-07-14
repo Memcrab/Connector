@@ -8,13 +8,13 @@ use Swoole\Timer;
 
 class Connector
 {
-    private static \Memcrab\Log\Log $ErrorHandler;
+    private static Monolog\Logger $ErrorHandler;
 
     public function __construct()
     {
     }
 
-    public static function setErrorHandler(\Memcrab\Log\Log $ErrorHandler): void
+    public static function setErrorHandler(Monolog\Logger $ErrorHandler): void
     {
         self::$ErrorHandler = $ErrorHandler;
     }
