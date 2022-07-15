@@ -8,7 +8,7 @@ use Swoole\Timer;
 
 class Connector
 {
-    private static Monolog\Logger $ErrorHandler;
+    private static \Monolog\Logger $ErrorHandler;
 
     public function __construct()
     {
