@@ -14,7 +14,7 @@ class Connector
     {
     }
 
-    public static function setErrorHandler(Monolog\Logger $ErrorHandler): void
+    public static function setErrorHandler(\Monolog\Logger $ErrorHandler): void
     {
         self::$ErrorHandler = $ErrorHandler;
     }
